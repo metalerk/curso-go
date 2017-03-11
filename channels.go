@@ -15,5 +15,9 @@ func main(){
 
 	msg := <- channel
 
-	fmt.Println(msg)
+	fmt.Println("Recibido: " + msg)
+
+	msg = <- channel
+
+	fmt.Println("Recibido: " + msg)
 }
